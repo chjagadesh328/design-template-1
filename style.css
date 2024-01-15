@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 26% 55% 15%;
+}
+
+#left-top-left{
+
+    padding: 40px;
+}
+#square{
+    height: 20px;
+    width: 20px;
+    rotate: 45deg;
+    background-color: black;
+}
+
+#left-top-right{
+    padding: 40px;
+    color: #333;
+    grid-column: 2;
+    justify-self: right;
+    text-align: right;
+}
+#left-top-right h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#left-top-right h5{
+    font-size: 15px;
+    font-weight: 500;
+    height: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#left-center{
+    
+    grid-column: 1/3;
+    padding: 40px;
+}
+#left-center h1{
+    font-size: 6vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: helvetica;
+    line-height: 6.5vw;
+    }
+#left-center h1:nth-child(2n){
+    text-align: center;
+}
+
+#left-bottom{
+    
+    grid-column: 1/3;
+    padding: 40px;
+}
+#left-bottom p{
+    width: 70%;
+    color: #333;
+}
+#right{
+    
+    grid-row: 1/4; 
+    grid-column: 3;
+    padding: 40px;
+    padding-right: 130px;
+}
+#right video{
+    height: 105%;
+    width: 100%;object-fit: cover;
+}
+
+#arrow{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+    background-color: #C47103;
+
+    border-radius: 50%;
+    opacity: .9;
+
+
+
+}
+#arrow i{
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: 9%;
+    
+}
+#search{
+    position: absolute;
+    top: 5.5%;
+    left:95%;
+}
+#search i{
+    font-size: 150%;
+}
